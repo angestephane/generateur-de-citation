@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Générateur de citation</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Citation container -->
+    <div class="citation-container" id="citation-container">
+      <!-- Citation -->
+      <div class="citations-texte">
+        <i class="fas fa-quote-left" style="font-size: 3rem"></i>
+        <span id="citation"></span>
+      </div>
+
+      <!-- Auteur -->
+      <div class="auteur-citation">
+        <span id="auteur"></span>
+      </div>
+
+      <!-- Bouton -->
+      <div class="boutons-container">
+        <button class="twitter-bouton" id="twitter" title="twitter la citation">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button
+          class="new-citation"
+          id="new-citation"
+          title="Nouvelle citation"
+        >
+          Nouvelle citation
+        </button>
+      </div>
+    </div>
+
+    <!-- Effet de chargement -->
+    <div class="loader" id="loader"></div>
+
+    <!--Scripts-->
+    <script src="citations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
